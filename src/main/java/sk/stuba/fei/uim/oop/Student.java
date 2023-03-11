@@ -12,6 +12,9 @@ public class Student {
         this.priezvisko = priezvisko;
         this.vek = vek;
     }
+    public Student( String meno) {
+        this.meno = meno;
+    }
 
     public void setID(int ID) {
         this.ID = ID;
@@ -43,5 +46,8 @@ public class Student {
 
     public int getVek() {
         return vek;
+    }
+    public String toString() {
+        return  " " + this.meno.toString();
     }
 }
